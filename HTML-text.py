@@ -32,7 +32,7 @@ sample_html = "<img src='https://example.com/image1.jpg'> <img src='http://examp
 image_links = extract_image_links(sample_html)
 if image_links:
     for image_link in image_links:
-        print(image_link)
+        print(image_link[0])
 else:
     print("Нет ссылок с картинками в HTML тексте.")
 
